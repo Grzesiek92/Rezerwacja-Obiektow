@@ -9,16 +9,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{pathFor 'home'}}">Strona Glowna</a>
+                <a class="navbar-brand" href="{{pathFor 'home'}}">Strona Główna</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     {{#if isClient}}
-                    <li><a href="{{pathFor 'reservationShow'}}">Moje rezerwacje <span class="sr-only"></span></a>
+                    <li><a href="{{pathFor 'reservationShow'}}">Moje Rezerwacje <span class="sr-only"></span></a>
                     </li>
-                    <li><a href="{{pathFor 'reservationForm'}}">Dokonaj rezerwacji<span class="sr-only"></span></a>
+                   
+ <li><a href="{{pathFor 'reservationForm2'}}">Dokonaj rezerwacji obiektu<span class="sr-only"></span></a>
                     </li>
                     {{/if}} {{#if isWorker}}
                     <li><a href="{{ pathFor 'articleForm' }}">Dodaj ogłoszenie<span class="sr-only"></span></a>
@@ -26,6 +27,7 @@
                     <li><a href="{{pathFor 'zarzadzaj'}}">Podejrzyj rezerwacje<span class="sr-only"></span></a>
                     </li>
                     {{/if}}
+                  
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">

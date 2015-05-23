@@ -1,0 +1,24 @@
+<template name="articleForm">
+    <div class="container">
+        <div class="row">
+            {{> nav}}
+        </div>
+        <form class="form-horizontal" role="form">
+            <div id='clear' class="btn btn-default btn-xs btn-info pull-right">Wyczyść formularz</div>
+            <div class="control-group">
+                <label for='tytul' class="control-label">Tytuł:</label>
+                <div class="controls">
+                    <input type=text class='form-control' name='title' id='tytul' value="{{tytul}}" required/>
+                    <!--                <p class="help-block">Example block-level help text here.</p>-->
+                </div>
+            </div>
+            <div class="control-group">
+                <label for='description' class="control-label">Treść:</label>
+                <div class="controls">
+                    <textarea name='tresc' class='form-control' rows='10' id='opis' required>{{tresc}}</textarea>
+                </div>
+            </div>
+            <button class="button btn-success pull-left" id="send">Wyślij</button>
+        </form>
+    </div>
+</template>

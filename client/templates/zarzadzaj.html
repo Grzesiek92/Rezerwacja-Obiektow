@@ -1,0 +1,12 @@
+<template name="zarzadzaj">
+    <div class="container">
+        <div class="row">
+            {{> nav}}
+        </div>
+        <div class="panel-default">
+            <div class="panel-body">
+                {{#each przegladWszystkich}} {{> przegladajItem}} {{/each}}
+            </div>
+        </div>
+    </div>
+</template>

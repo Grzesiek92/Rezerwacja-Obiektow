@@ -1,0 +1,31 @@
+<template name="reservationForm2">
+    <div class="container">
+        <div class="row">
+            {{> nav}}
+        </div>
+        <div class="row">
+            <div class="panel-body">
+                Obiekt :
+                <select class="form-control" id="NrKortu">
+                    <option value='0'>Wybierz obiekt</option>
+                    {{#each obiekt}}
+                    <option>{{> obiektItem}}</option>{{/each}}
+                </select>
+                Wybierz datę :
+                <input type="text" class="form-control" id="my-datepicker">Godzina :
+                <select class="form-control" id="time">
+                    <option>Wybierz Godzinę</option>
+                    <option value="9:00-9:45">9:00-9:45</option>
+                    <option value="10:00-10:45">10:00-10:45</option>
+                    <option value="11:00-11:45">11:00-11:45</option>
+                    <option value="12:00-12:45">12:00-12:45</option>
+                    <option value="13:00-13:45">13:00-13:45</option>
+                    <option value="14:00-14:45">14:00-14:45</option>
+                    <option value="15:00-15:45">15:00-15:45</option>
+                    <option value="16:00-16:45">16:00-16:45</option>
+                </select>
+                <button class="button btn-success pull-left" id="rezerwuj">Rezerwuj</button>
+            </div>
+        </div>
+    </div>
+</template>

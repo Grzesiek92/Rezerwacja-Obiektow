@@ -18,7 +18,7 @@ Template.register.events({
             Router.go('login');
         }
         else{
-            alert('Podane hasła się różnią, badz taki uzytkownik juz istnieje');
+            alert('Podane hasła się różnią');
         }
         
     }

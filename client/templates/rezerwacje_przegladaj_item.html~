@@ -1,0 +1,12 @@
+<template name="reservationItem">
+
+    <div class="row"> 
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h5>Data rezerwacji : {{data}}</h5>
+                <h5>Godzina rezerwacji: {{godzina}}</h5>
+                <h5>Zarezerwowany kort : {{nrkortu}}</h5>
+            </div>
+        </div>
+    </div>
+</template>

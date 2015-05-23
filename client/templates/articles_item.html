@@ -1,0 +1,21 @@
+<template name="postItem">
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{ tytul }}</h3>
+                </div>
+                <div class="panel-body">
+                    <span style="padding-left:5%;">
+            {{ tresc}}
+            </span>
+                </div>
+                {{#if del}}
+                <div class="row">
+                    <button class="button btn-danger" id="del">Usuń</button>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>

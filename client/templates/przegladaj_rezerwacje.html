@@ -1,0 +1,11 @@
+<template name="reservationShow">
+    <div class="container">
+        <div class="row">
+            {{> nav}}
+        </div>
+        <div class="row">
+            <h2>Twoje rezerwacje</h2>
+            {{#each przeglad}} {{> reservationItem}} {{/each}}
+        </div>
+    </div>
+</template>

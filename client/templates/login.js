@@ -5,10 +5,10 @@ Template.login.events = {
         var password = document.getElementById('inputPassword').value;
         Meteor.loginWithPassword(username,password);
         
-        if (Meteor.users.findOne({username: username})!=false)
+        if (Meteor.userId() != 0)
             Router.go('home');
         else
-            alert('Blad!');
+            alert('Hola!. Zalogój sie.');
     }
 
 }
